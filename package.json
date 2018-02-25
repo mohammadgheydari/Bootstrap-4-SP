@@ -26,6 +26,8 @@
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9",
+    "prismjs": "^1.11.0",
+    "video.js": "^6.6.3",
     "waves.js": "0.0.7-13",
     "wowjs": "^1.1.3"
   }

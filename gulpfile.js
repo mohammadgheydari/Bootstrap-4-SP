@@ -24,6 +24,7 @@ gulp.task('js', function(){
     'node_modules/bootstrap/dist/js/bootstrap.min.js', 
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/wowjs/dist/wow.min.js',
+    'node_modules/video.js/dist/video.min.js',
     'node_modules/popper.js/dist/umd/popper.min.js'
 ])
     // .pipe(sourcemaps.init())
