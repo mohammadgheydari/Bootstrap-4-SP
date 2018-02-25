@@ -1,4 +1,16 @@
-$bg-color: #eee;
-body{
-    background: $bg-color;
-}
+$blue:    #9c27b0;
+$red : #f44336;
+$green: #47a44b;
+$yellow: #ff9800;
+$cyan : #00bcd4;
+
+@import "icons";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/animate.css/source/_base";
+@import "node_modules/animate.css/source/fading_entrances/fadeIn";
+@import "sidebar";
+@import "waves";
+@import "core";
+
+
+

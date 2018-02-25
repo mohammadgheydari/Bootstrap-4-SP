@@ -12,7 +12,7 @@ var browsersync = require('browser-sync').create();
 //     .pipe(gulp.dest('build/html'))
 // });
 gulp.task('sass', function(){
-    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
+    return gulp.src(['src/scss/*.scss'])
     .pipe(sass())
     // .pipe(minifyCSS())
     .pipe(gulp.dest("src/css"))
@@ -23,6 +23,7 @@ gulp.task('js', function(){
     return gulp.src([
     'node_modules/bootstrap/dist/js/bootstrap.min.js', 
     'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/wowjs/dist/wow.min.js',
     'node_modules/popper.js/dist/umd/popper.min.js'
 ])
     // .pipe(sourcemaps.init())
@@ -36,7 +37,7 @@ gulp.task('serve',['sass'], function(){
     browsersync.init({
         server : "./src"
     })    
-    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'],['sass']);
+    gulp.watch(['src/scss/*.scss'],['sass']);
     gulp.watch("src/*.html").on('change',browsersync.reload);
 });
 
